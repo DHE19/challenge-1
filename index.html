@@ -10,24 +10,34 @@
     <body>
         <main>
             <div class="panel">
-
                 <textarea
                     name="message"
                     id="message"
-                    placeholder="Coloca El texto Que quiere encriptar"></textarea>
-                <div>
-                    <span>letras minisculas y sin acentos</span>
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
+                    placeholder="Coloca el texto que deseas encriptar"></textarea>
+                <div class="buttons-panel">
+                    <span class="i-message">letras minisculas y sin acentos</span>
+                    <div class="buttons">
+                        <button id="btn-encript" class="btn-encript">Encriptar</button>
+                        <button id="btn-dencript" class="btn-decript">Desencriptar</button>
+                    </div>
                 </div>
             </div>
             <aside class="result">
-                <textarea
-                    disabled
-                    name=""
-                    id=""
-                    placeholder="Aquí se mostrar el dato desencriptado"></textarea>
+                <div class="no-message-found" id="placeholder">
+                    <img src="assets/img/Muñeco.png" alt="muñeco">
+                    <h2>Ningún Mensaje Fue Encontrado</h2>
+                    <p>Ingrese el texto que deseas encriptar o des-encriptar</p>
+                </div>
+                <div id="panel-message" class="panel-message">
+                    <textarea
+                        id="decrypt-area"
+                        disabled="disabled"
+                        class="decrypt-area"
+                        placeholder="Aquí se mostrar el dato desencriptado"></textarea>
+                    <button class="copy">Copiar al portapapeles</button>
+                </div>
             </aside>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
