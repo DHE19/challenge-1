@@ -44,7 +44,16 @@ main{
     justify-content: space-around;
     justify-items: center;
     margin: 0 100px;
-    margin-top: 5vh;
+    margin-top: 2vh;
+}
+
+header{
+    margin: 0 100px;
+    padding-top:20px ;
+}
+
+.logo{
+    width: 27px;
 }
 
 textarea{
@@ -159,7 +168,6 @@ button{
 
 .result{
     padding: 10px;
-    margin-top: 12px;
     flex: 0.27;
     min-height: 100%;
     background: var(--secondary-color);
@@ -205,6 +213,15 @@ button{
 }
 /*Fin panel derecho*/
 
+@media screen and (max-width: 1200px){
+    .panel{
+        flex: 0.6;
+    }
+    
+    .result{
+        flex:0.4
+    }
+}
 @media screen and (max-width: 992px){
     main{
         margin: 10px;
@@ -223,7 +240,11 @@ button{
     main{
         flex-direction: column;
         gap: 20px;
-        margin:30px;
+        margin:10px 30px;
+    }
+
+    header{
+        margin: 0 35px;
     }
 
     .no-message-found > img{
