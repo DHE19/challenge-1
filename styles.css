@@ -52,6 +52,19 @@ header{
     padding-top:20px ;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+footer >a{
+    text-decoration: none;
+    color: #101b29;
+    margin-left: 3px;
+
+}
+
 .logo{
     width: 27px;
 }

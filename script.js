@@ -22,9 +22,10 @@ encryptButton.onclick = () => {
     outputTextArea.value = encrypt(message);
 }
 
-copyButton.onclick = () =>{
-    outputTextArea.select();
-    document.execCommand("copy");
+copyButton.onclick = async () =>{
+    let value = outputTextArea.value;
+    await navigator.clipboard.writeText(value);
+    alert('texto copiado');
 }
 //encripta los mensajes
 const encrypt = (message) => {
